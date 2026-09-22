@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "skal.title",
+  "name": "Skål Title",
+  "version": "0.1.0",
+  "author": "Outcrop Labs",
+  "description": "Title of the focused window in the bar",
+  "homepage": "https://github.com/outcrop-labs/skal-title",
+  "license": "MIT",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "TitleWidget.qml" },
+  "barWidget": {
+    "displayName": "Skål Title",
+    "description": "Title of the focused window",
+    "category": "Compositor",
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": { "maxWidth": 280 },
+    "schema": [
+      {
+        "key": "maxWidth",
+        "type": "integer",
+        "label": "Max width (px)",
+        "min": 80,
+        "max": 800,
+        "defaultValue": 280
+      }
+    ]
+  }
+}
